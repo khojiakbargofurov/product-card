@@ -1,0 +1,129 @@
+:root{
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/fraunces-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+  font-size: 62.5%;
+}
+body{
+  height: 100%;
+  font-size: 1.6rem;  
+}
+.container{
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Figtree,sans-serif;
+  border: 1px solid var(--Black);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px 1px var(--Black);
+}
+.img{
+  max-width: 355px;
+}
+.card-img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.card-info{
+  border-radius: 10px;
+  max-width: 355px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--White);
+  height: 41vh;
+  gap: 20px;
+  padding: 40px;
+}
+.first-title{
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--Dark-grayish-blue);
+}
+.title{
+  font-family: Fraunces, serif;
+  color: var(--Very-dark-blue);
+  font-size: 4rem;
+  padding: 0 0 10px 0;
+}
+.info{
+  font-family: Montserrat, sans-serif;
+  color: var(--Dark-grayish-blue);
+  line-height: 2.5rem;
+}
+.price{
+  padding: 10px 0 0;
+  display: flex;
+  align-items: center;  
+  gap: 20px;
+}
+.first-price{
+  font-family: Fraunces, serif;
+  font-size: 4rem;
+  color: var(--Dark-cyan);
+}
+.del-price{
+  font-family: Montserrat, sans-serif;
+  color: var(--Very-dark-blue);
+}
+.btn{
+  border-radius: 10px;
+  color: var(--White);
+  background-color: var(--Dark-cyan);
+  padding: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
